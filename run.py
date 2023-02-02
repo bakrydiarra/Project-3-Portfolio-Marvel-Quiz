@@ -1,3 +1,14 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+"""
+Import libraries needed to the function of this application.
+"""
+import colorama
+from colorama import Fore, Style
+colorama.init(autoreset=True)
+from logo import TITLE
+
+
+def start():
+    """
+    Display logo and instructions of the quiz
+    """
+    print(TITLE)
