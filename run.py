@@ -1,11 +1,11 @@
 """
 Import libraries needed to the function of this application.
 """
+import time
 import colorama
 from colorama import Fore, Style
 colorama.init(autoreset=True)
 from logo import TITLE
-import time
 
 
 def start():
@@ -30,7 +30,7 @@ def validate_name():
         name = name.strip().lower()
         print("")
         if len(name) > 10:
-            print(f"""{Fore.RED}Please enter a name with 10 or less character: \n""")
+            print(f"""{Fore.RED}Please enter a name with 10 or less character \n""")
         else:
             print(f"Godd luck, {name} !")
             break
