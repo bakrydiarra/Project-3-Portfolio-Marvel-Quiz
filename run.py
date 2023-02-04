@@ -58,13 +58,10 @@ def run_quiz():
         for option in question.choice:
             print(option)
         useranswer = input("Enter your answer: \n")
-
-
-def check_answer():
-    """
-    Check user input-answer
-    Implement score
-    """
+        if useranswer.lower() == question.answer.lower():
+            print(f"{Fore.GREEN} Well done!")
+        else:
+            print(f"{Fore.RED}Sorry, wrong answer!")
 
 
 start()
