@@ -50,18 +50,43 @@ def run_quiz():
     Iterate through the questions list.
     Iterate through the choice list.
     Get user input-answer.
-    Implementing score +=1 or +=0
+    validate user input-answer: invalid, correct,wrong.
+    Implementing score +=10 for a good answer.
     """
-    global useranswer
+    global user_answer
+    score = 0
+
     for question in quiz_questions:
         print(f"{question.item}?")
         for option in question.choice:
             print(option)
-        useranswer = input("Enter your answer: \n")
-        if useranswer.lower() == question.answer.lower():
+        user_answer = input("Enter your answer: \n")
+        if user_answer.lower() not in ["a", "b", "c"]:
+            print(f"{Fore.RED}{Style.BRIGHT}Invalid answer! Pick: a, b or c.")
+            print("")
+            user_answer = input("Enter your answer: \n")
+        if user_answer.lower() == question.answer.lower():
             print(f"{Fore.GREEN} Well done!")
+            score += 10
         else:
             print(f"{Fore.RED}Sorry, wrong answer!")
+    final_score(score)
+
+
+def final_score(score):
+    """
+    Display score
+    """
+
+    if score < 50:
+        print("You're almost passed!")
+        print(f"Your score is {score} out of 100 \n")
+    elif score >= 50 and score <= 70:
+        print("Good job. You passed!")
+        print(f"Your score is {score} out of 100 \n")
+    else:
+        print("Excellent Job!")
+        print(f"Your score is {score} out of 100 \n")
 
 
 start()
