@@ -38,7 +38,7 @@ def validate_name():
         if len(name) > 10 or len(name) < 4:
             print(f"{Fore.RED}Please enter a name between 4 and 10 letters")
         elif not name.isalpha():
-            print(f"{Fore.RED}Please enter a name between 4 and 10 letters")     
+            print(f"{Fore.RED}Please enter a name between 4 and 10 letters")
         else:
             print(f"Godd luck, {name}!")
             print("")
@@ -58,18 +58,20 @@ def run_quiz():
 
     for question in quiz_questions:
         print(f"{question.item}?")
+        print("")
         for option in question.choice:
             print(option)
         user_answer = input("Enter your answer: \n")
         if user_answer.lower() not in ["a", "b", "c"]:
             print(f"{Fore.RED}{Style.BRIGHT}Invalid answer! Pick: a, b or c.")
-            print("")
             user_answer = input("Enter your answer: \n")
         if user_answer.lower() == question.answer.lower():
             print(f"{Fore.GREEN} Well done!")
+            print("")
             score += 10
         else:
             print(f"{Fore.RED}Sorry, wrong answer!")
+            print("")
     final_score(score)
 
 
@@ -87,6 +89,24 @@ def final_score(score):
     else:
         print("Excellent Job!")
         print(f"Your score is {score} out of 100 \n")
+
+
+def play_again():
+    """
+    Restart the quiz for another round
+    or quit the game.
+    """
+    while True:
+        user_wish = input("Wanna play again? y/n\n")
+        user_wish = user_wish.lower()
+        if user_wish == "y":
+            print("Restarting Quiz...")
+            break
+        elif user_wish == "n":
+            print("Closing application...")
+            return False
+        else:
+            print(f"{Fore.RED}{Style.BRIGHT}Invalid answer! Pick: 'y' or 'n'")
 
 
 if __name__ == "__main__":
