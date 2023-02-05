@@ -2,6 +2,7 @@
 Import libraries needed to the function of this application.
 """
 from time import sleep
+import os
 import colorama
 from colorama import Fore, Style
 from logo import TITLE
@@ -107,6 +108,14 @@ def play_again():
             return False
         else:
             print(f"{Fore.RED}{Style.BRIGHT}Invalid answer! Pick: 'y' or 'n'")
+
+
+def clear():
+    """
+    use code from
+    https://www.w3docs.com/snippets/python/how-to-clear-the-interpreter-console.html
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 if __name__ == "__main__":
