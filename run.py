@@ -6,6 +6,7 @@ import os
 import colorama
 from colorama import Fore, Style
 from logo import TITLE
+from logo import BYE
 from quiz import quiz_questions
 colorama.init(autoreset=True)
 
@@ -44,6 +45,7 @@ def validate_name():
         else:
             print(f"Godd luck, {name}!")
             print("")
+            sleep(1)
             break
 
 
@@ -60,9 +62,11 @@ def run_quiz():
 
     for question in quiz_questions:
         print(f"{question.item}?")
+        sleep(1)
         print("")
         for option in question.choice:
             print(option)
+            sleep(1)
         user_answer = input("Enter your answer: \n")
         if user_answer.lower() not in ["a", "b", "c"]:
             print(f"{Fore.RED}{Style.BRIGHT}Invalid answer! Pick: a, b or c.")
@@ -102,11 +106,12 @@ def play_again():
         user_wish = input("Wanna play again? y/n\n")
         user_wish = user_wish.lower()
         if user_wish == "y":
-            print("Reseting Quiz...")
+            print(f"{Fore.BLUE}{Style.BRIGHT}Reseting Quiz...")
             clear()
             start()
             break
         if user_wish == "n":
+            print(BYE)
             print("Closing application...")
             clear()
             print("To reset the quiz click the button 'Run Programm'")
