@@ -3,7 +3,11 @@
 
 class Question:
     """
-    Creating a class questions as purpose to be used in a for loop iteration
+    Creating a class question as purpose to be used in a for loop
+    using a def__rep__ to make sure the class object will be
+    represented as a string
+    the concreat implementation of this class will contain in
+    a list which allows to add continually new questions if needed
     """
     def __init__(self, item, answer, choice):
         self.item = item
@@ -41,5 +45,3 @@ quiz_questions = [
 """ Create a list to make sure that the user only use alphabet
 for his username """
 
-good_input = ["""a, b, c, d, e, f, g, h, i, j, k, l, m, n,
-                o, p, q, r, s, t, u, v, w, x, y, z"""]
