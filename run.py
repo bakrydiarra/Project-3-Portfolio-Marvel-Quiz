@@ -6,6 +6,7 @@ import colorama
 from colorama import Fore, Style
 from logo import TITLE
 from quiz import quiz_questions
+from quiz import good_input
 colorama.init(autoreset=True)
 
 
@@ -36,10 +37,11 @@ def validate_name():
         name = name.strip().lower()
         print("")
         if len(name) > 10 or len(name) < 4:
-            print(f"""{Fore.RED}Please enter a name between\
-             4 and 10 characters \n""")
+            print(f"{Fore.RED}Please enter a name between 4 and 10 letters")
+        elif name != good_input:
+            print(f"{Fore.RED}Please enter a name between 4 and 10 letters")
         else:
-            print(f"Godd luck, {name} !")
+            print(f"Godd luck, {name}!")
             print("")
             break
 

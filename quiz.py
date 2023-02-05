@@ -37,3 +37,9 @@ quiz_questions = [
     Question("Who is the Winter Soldier", "b",
              ["(a) Hawkeye", "(b) Bucky", "(c) Heimdall"])
 ]
+
+""" Create a list to make sure that the user only use alphabet
+for his username """
+
+good_input = ["""a, b, c, d, e, f, g, h, i, j, k, l, m, n,
+                o, p, q, r, s, t, u, v, w, x, y, z"""]
