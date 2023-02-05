@@ -26,6 +26,7 @@ def start():
     sleep(1)
     validate_name()
     run_quiz()
+    play_again()
 
 
 def validate_name():
@@ -101,12 +102,16 @@ def play_again():
         user_wish = input("Wanna play again? y/n\n")
         user_wish = user_wish.lower()
         if user_wish == "y":
-            print("Restarting Quiz...")
+            print("Reseting Quiz...")
+            clear()
+            start()
             break
-        elif user_wish == "n":
+        if user_wish == "n":
             print("Closing application...")
+            clear()
+            print("To reset the quiz click the button 'Run Programm'")
             return False
-        else:
+        if user_wish != "y" and user_wish != "n":
             print(f"{Fore.RED}{Style.BRIGHT}Invalid answer! Pick: 'y' or 'n'")
 
 
@@ -116,6 +121,7 @@ def clear():
     https://www.w3docs.com/snippets/python/how-to-clear-the-interpreter-console.html
     """
     os.system('cls' if os.name == 'nt' else 'clear')
+    sleep(2)
 
 
 if __name__ == "__main__":
