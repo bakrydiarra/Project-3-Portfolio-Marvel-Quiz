@@ -5,10 +5,10 @@ class Question:
     """
     Creating a class question as purpose to be used in a for loop
     using a def__rep__ to make sure the class object will be
-    represented as a string
+    printed as a string
     ref: https://www.educative.io/answers/what-is-the-repr-method-in-python
-    the concrete implementation of this class will contain in
-    a list which allows to add continually new questions if needed
+    the concrete implementation of this class - Objects - will be contained in
+    a list which allows us to add continually new questions if needed
     """
     def __init__(self, item, answer, choice):
         self.item = item

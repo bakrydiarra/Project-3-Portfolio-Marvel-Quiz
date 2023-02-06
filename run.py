@@ -1,5 +1,9 @@
 """
 Import libraries needed to the function of this application.
+code : if __name__ == "__main__" at the end of the fle
+make sure that the function run as main programm
+code taken:
+https://www.freecodecamp.org/news/if-name-main-python-example/
 """
 from time import sleep
 import os
@@ -13,8 +17,9 @@ colorama.init(autoreset=True)
 
 def start():
     """
-    Display logo and instructions of the quiz.
-    Asking username input to run the quiz.
+    Display logo and instructions for the quiz.
+    call all the other functions to run the
+    application
     """
     print(TITLE)
     print("Welcome to the superheroes universe!\n")
@@ -31,8 +36,9 @@ def start():
 
 
 def validate_name():
-    """a
-    validation of the username to start the game
+    """
+    User has to give a valid name
+    in order to run the quiz
     """
     while True:
         name = input("Enter your name to start the quiz: \n")
@@ -54,7 +60,7 @@ def run_quiz():
     Iterate through the questions list.
     Iterate through the choice list.
     Get user input-answer.
-    validate user input-answer: invalid, correct,wrong.
+    Validate user input-answer: invalid, correct,wrong.
     Implementing score +=10 for a good answer.
     """
 
@@ -62,11 +68,9 @@ def run_quiz():
 
     for question in quiz_questions:
         print(f"{question.item}?")
-        sleep(1)
         print("")
         for option in question.choice:
             print(option)
-            sleep(1)
         user_answer = input("Enter your answer: \n")
         if user_answer.lower() not in ["a", "b", "c"]:
             print(f"{Fore.RED}{Style.BRIGHT}Invalid answer! Pick: a, b or c.")
@@ -83,7 +87,8 @@ def run_quiz():
 
 def final_score(score):
     """
-    Display score
+    Display user's score
+    and a message
     """
 
     if score < 50:
@@ -99,20 +104,25 @@ def final_score(score):
 
 def play_again():
     """
-    Restart the quiz for another round
-    or quit the game.
+    Reset the quiz to play again
+    or quit the game if the user
+    want to stop playing
     """
     while True:
         user_wish = input("Wanna play again? y/n\n")
         user_wish = user_wish.lower()
         if user_wish == "y":
+            clear()
             print(f"{Fore.BLUE}{Style.BRIGHT}Reseting Quiz...")
+            sleep(1)
             clear()
             start()
             break
         if user_wish == "n":
             print(BYE)
+            sleep(1)
             print("Closing application...")
+            sleep(2)
             clear()
             print("To reset the quiz click the button 'Run Programm'")
             return False
@@ -126,7 +136,7 @@ def clear():
     https://www.w3docs.com/snippets/python/how-to-clear-the-interpreter-console.html
     """
     os.system('cls' if os.name == 'nt' else 'clear')
-    sleep(2)
+    sleep(3)
 
 
 if __name__ == "__main__":

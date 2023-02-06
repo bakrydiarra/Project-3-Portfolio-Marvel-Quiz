@@ -1,6 +1,8 @@
 """
-Logo for the game.
-Generated with application
+Logo for the game :
+TITLE when the app starts
+BYE when user finishes thr quiz and doesn't want to play again
+Generated with application:
 http://patorjk.com/software/taag/#p=display&f=Standard&t=bye%20bye
 """
 
