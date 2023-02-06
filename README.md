@@ -79,8 +79,9 @@
 ### Tools and Other Resources Used:
 
  - [Github](https://github.com/) -  for version control and pushing content to repository.
- - [Heroku](https://id.heroku.com/login) - for deployment
- - [Gitpod](https://www.gitpod.io/)  -  for editting code.  
+ - [Heroku](https://id.heroku.com/login) - for deployment.
+ - [Gitpod](https://www.gitpod.io/)  -  for editting code.
+ - [Love Sandwiches](https://github.com/bakrydiarra/love-sandwiches) - for inspiration and understanding practice coding with the python.  
  - [W3 Schools](https://www.w3schools.com/) - for understanding Python's logic and syntax. 
  - [Lucid](https://lucid.app/users/login#/login) - for creating a flowchart.
  - [Python Linter](https://pep8ci.herokuapp.com/)- for validating python code.
@@ -88,7 +89,10 @@
  - [Bro Code](https://github.com/beratzorlu/python-quiz/blob/main/README.md#libraries) - for understanding the logic of a quiz game:
    - [QUIZ GAME written in Python](https://www.youtube.com/watch?v=zehwgTB0vV8)
    - [Python quiz game](https://www.youtube.com/watch?v=yriw5Zh406s)
- - [Dev.to How to build a Quiz Game in Python](https://dev.to/mindninjax/how-to-build-a-quiz-game-in-python-10ik) - or understanding the logic of a quiz game
+ - [Dev.to How to build a Quiz Game in Python](https://dev.to/mindninjax/how-to-build-a-quiz-game-in-python-10ik) - or understanding the logic of a quiz game.
+ - [Python: Print ascii art](https://www.youtube.com/watch?v=arcFqEuV_XQ) - for understanding the use of ASCII.
+ - [Geeks for Geeks](https://www.geeksforgeeks.org/print-colors-python-terminal/) - for understanding the use of colors in python.
+ 
 
 ### Libraries
 
@@ -101,10 +105,9 @@
 
 ### Code Used
   
- - [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) -  used as a template for the gitpod environment.
- - [W3 Schools](https://www.w3schools.com/howto/howto_css_flip_image.asp) - used and adapted for the structure of the memory-card and flip effect 3d.
- - [Love Maths Challenge]  - used for function DomContenLoaded and adapted.
-
+ - [Gitpod Full Template](https://github.com/Code-Institute-Org/python-essentials-template) -  used as a template for the gitpod environment.
+ - [Python if __name__ == __main__ Explained](https://www.freecodecamp.org/news/if-name-main-python-example/) - used to make sure the function start run as main programm.
+ - [W3docs](https://www.w3docs.com/snippets/python/how-to-clear-the-interpreter-console.html) - used to clear the screen.
 
 
 
