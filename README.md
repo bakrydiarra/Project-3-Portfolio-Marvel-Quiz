@@ -7,8 +7,8 @@
 
 ## Site Info
 
-* 
-* 
+* The Marvel Quiz is a game is a simple straight forward quiz that suits everyone who'd like to test his/her marvel knowledge.
+* This is my Project Portfolio 3 submission for Code Institute's Diploma in Web Application Development course.It is basic command-line application based on the programing language Python.
   - Live website [here]
  
 
@@ -21,11 +21,25 @@
 
 ## User Experience (UXD)
 
+- ### Target Audience
+ - 
+
 -   ### User stories
 
  - As a user I  can:
 
-   - 
+   - see a title indicating the purpose of the app
+   - see clear, short, and concise instructions
+   - enter his/her name to initiate the game
+   - receive feedback when the name chosen isn't valid
+   - receive an encouragement word to start the quiz when the name is valid
+   - read clear questions with mutliple choice answer identified with the letter a, b and c
+   - enter his answer using a, b. or c
+   - recive a feedback when the answer is not valid
+   - receive a feedback about the correctness of his/her answer
+   - receive a score from 0 to 100 out of 100
+   - reset the game for another play
+   - quit the game 
    
 
 
