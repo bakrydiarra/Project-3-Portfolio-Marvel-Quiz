@@ -61,7 +61,7 @@
   The class structure in the quiz.py with the list quiz_questions allow us in the future to extend the number of question without readjusting other codes. 
   The main logic of the code is based on the iteration of a for loop in the list quiz_questions which takes its structure from the class Question. 
   The username’s  answer are compared to the solution contained in the quiz_questions list.
-  To initiate the game, the user must  fulfil the criteria fixed by the function validate_name. The database model is quite simple and linear.
+  To initiate the game, the user must fulfil the criteria fixed by the function validate_name. The database model is quite simple and linear.
 
   
   ---
@@ -105,8 +105,17 @@
 
 | Feature | Expect | Action | Result |
 | :--- | :--- | :--- | :--- |
-| XXX | 4x4 grid style game, title, two buttons | clicked live link| positive | 
-| Start Game| By clicking a card | clicked a card | postive |
+| Welcome & Instructions screen| landing page shows a title and instructions | clicked live link | X | 
+| Feedback about unsername| enter a name. Username valid: good luck message | taped an alphabetic username | X |
+| Feedback about username | enter a name but not only with letter : username not valid. Another try | entered other keyboard but letter | X |
+| Question with multiple choice option | read a question three choice ordered under a, b and c | entered a name before the first question or answering a previous question | X |
+| Feedback when an answer not valid | when something else but a, b or c is typed as an answer. It is considered not valid | taped another letter but a, b or c | X |
+| Positive feedback when an answer correct | well done message when the right answer was typed | picked the right option btw a, b or c | X |
+| Negative Feedback when an anser not correct | sorry message when the wrong answer was typed | picked the wrong option btw a, b or c | X |
+| Score Display | when all questions are anwered appears the final score | answered all questions received a score out of  100 | X |
+| Play again | Being asked to play again and tpye "y" to validate: reset game | taped "y" | X |
+| Quit the quiz | Being asked to play again and tpye "n" to validate: Bye bye message | taped "n" | X |
+| Feeback when other choice but "y" or "n" | Being asked to play again and tpye something except "y" or "n" : invalid answer message | taped another choice | X |
 
 
 ---
