@@ -2,29 +2,37 @@
 
 ## Project Portfolio 3 - Full Stack Development 
 ##  Python Essentials
+---
 
 
-
-## Site Info
+# Site Info
 
 * The Marvel Quiz is a game is a simple straight forward quiz that suits everyone who'd like to test his/her marvel knowledge.
 * This is my Project Portfolio 3 submission for Code Institute's Diploma in Web Application Development course.It is basic command-line application based on the programing language Python.
   - Live website [here]
- 
+ ---
 
-## Index – Table of Contents
+# Index – Table of Contents
 * [User Experience (UX)](#user-experience-ux)
 * [Features](#features)
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
+---
 
-## User Experience (UXD)
+# User Experience (UXD)
 
-- ### Target Audience
- - 
+## Target Audiance
+ 
+ - This project targets an inclusive audiance. The only prerequisites is a good comprehension of the english language.
 
--   ### User stories
+## Objectives
+
+ - Simple and entertainng quiz game application.
+ - Clear inforamation delivered to proceed throught the game.
+ - deliver a score at the end of the game.
+
+## User stories
 
  - As a user I  can:
 
@@ -40,34 +48,60 @@
    - receive a score from 0 to 100 out of 100
    - reset the game for another play
    - quit the game 
+
+## Technical Design
    
+  ![Flowchart](docs/Flowchart.jpg)
+
+
+## Data Model
+
+  - The application is based on three simple compartmentalised module.
+  This helps to avoid overloading the main module run.py and makes the code easier to read. 
+  The class structure in the quiz.py with the list quiz_questions allow us in the future to extend the number of question without readjusting other codes. 
+  The main logic of the code is based on the iteration of a for loop in the list quiz_questions which takes its structure from the class Question. 
+  The username’s  answer are compared to the solution contained in the quiz_questions list.
+  To initiate the game, the user must  fulfil the criteria fixed by the function validate_name. The database model is quite simple and linear.
+
+  
+  ---
 
 
    
-
-## Issues Faced during development
-
-    - 
-
-
-## Features
+# Features
 
 ### Existing Features
+
+### Welcome & Instructions screen
+
+### Username Feedback
+
+### Questions & Choices
+
+### Answer Feedback
+
+### Score & Play again choice
+
+### Reset Game
+
+### Quit Game
+
 
 
 
 ### Features which could be implemented in the future
 
- - 
+ 
+ ---
 
 ## Testing
 
 ### Validator Testing
 
-
+---
  
 
-### Testing the user experience
+ Testing the user experience
 
 | Feature | Expect | Action | Result |
 | :--- | :--- | :--- | :--- |
@@ -75,15 +109,16 @@
 | Start Game| By clicking a card | clicked a card | postive |
 
 
+---
+
+# Deployment
 
 
-## Deployment
-
--
+---
  
 
  
-## Credits 
+# Credits 
 
 ### Technologie used
 
