@@ -76,7 +76,7 @@ def run_quiz():
             print(f"{Fore.RED}{Style.BRIGHT}Invalid answer! Pick: a, b or c.")
             user_answer = input("Enter your answer: \n")
         if user_answer.lower() == question.answer.lower():
-            print(f"{Fore.GREEN} Well done!")
+            print(f"{Fore.GREEN}Well done!")
             print("")
             score += 10
         else:

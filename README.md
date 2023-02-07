@@ -51,7 +51,7 @@
 
 ## Technical Design
    
-  ![Flowchart](docs/Flowchart.jpg)
+  - <details><summary>Flowchart</summary><img src="docs/flowchart.jpg"></details>
 
 
 ## Data Model
@@ -98,6 +98,12 @@
 
 ### Validator Testing
 
+  Code Institute's [Python Linter](https://pep8ci.herokuapp.com/) was used to check the correctness of the app's code.
+   - <details><summary>logo.py</summary><img src="docs/logo_py.png"></details>
+   - <details><summary>quiz.py</summary><img src="docs/quiz_py.png"></details>
+   - <details><summary>run.py</summary><img src="docs/run_py.png"></details>
+     
+
 ---
  
 
@@ -122,6 +128,26 @@
 
 # Deployment
 
+ - This application has been deployed by using the Heroku cloud platform. Before deploying with Heroku :
+    - Remove un-used imports from run.py file.
+    - Use the "pip freeze -> requiremnts.txt" command in the gitPod terminal; to save any libraries that need to be installed to the project files in Heroku.
+
+1. Sign in to Heroku.
+2. In Heroku account, go to Dashboard and click ‘Create New App’. Give the app a unique name and select region (Europe).
+3. Click ‘Create App’.
+4. Click on setting tab.
+5. Click Reveal Config Vars.
+6. Set the value of KEY to PORT, and the value to 8000.
+7. Click ‘Add Buildpack’, select Python and click ‘Save Changes’.
+8. Then select ‘NodeJS’ and click save again. IMPORTANT - Buildpacks should be in order. Python on top of NodeJS.
+9. Click on ‘Deploy’ tab.
+10. Select ‘GitHub' as deployment method.
+11. Search for my Github repository name and then click “connect”.
+12. Scroll down and click ‘Enable Automatic Deploys’. (Confirm the correct branch and choose either to automatically or manually deploy your app. In this case I clicked automatic deploy.).
+13. Once deployed, click ‘view’ to access deployed project.
+
+
+
 
 ---
  
@@ -139,7 +165,7 @@
  - [Github](https://github.com/) -  for version control and pushing content to repository.
  - [Heroku](https://id.heroku.com/login) - for deployment.
  - [Gitpod](https://www.gitpod.io/)  -  for editting code.
- - [Love Sandwiches](https://github.com/bakrydiarra/love-sandwiches) - for inspiration and understanding practice coding with the python.  
+ - [Love Sandwiches](https://github.com/bakrydiarra/love-sandwiches) - for inspiration and understanding practice in coding with the python.  
  - [W3 Schools](https://www.w3schools.com/) - for understanding Python's logic and syntax. 
  - [Lucid](https://lucid.app/users/login#/login) - for creating a flowchart.
  - [Python Linter](https://pep8ci.herokuapp.com/)- for validating python code.
