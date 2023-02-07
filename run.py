@@ -114,7 +114,7 @@ def play_again():
         if user_wish == "y":
             clear()
             print(f"{Fore.BLUE}{Style.BRIGHT}Reseting Quiz...")
-            sleep(1)
+            sleep(2)
             clear()
             start()
             break
