@@ -17,6 +17,7 @@
 * [Features](#features)
 * [Testing](#testing)
 * [Deployment](#deployment)
+* [Bug](#bug)
 * [Credits](#credits)
 ---
 
@@ -91,6 +92,9 @@
 
 ### Features which could be implemented in the future
 
+ - Expanding the size of the quiz according a difficulty level
+ - Leaderboard where user can see his/her ranking and has acces to his/her an history of playerdata - Implementation a Google Spreadsheets for this purpose, to push and pull score data
+ 
  
  ---
 
@@ -151,6 +155,14 @@
 
 ---
  
+ # Bug
+
+| Bug | Fixed |
+| :--- | :--- |
+| X | X |
+ 
+
+ ---
 
  
 # Credits 
