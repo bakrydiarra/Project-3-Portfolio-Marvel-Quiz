@@ -9,8 +9,8 @@
 
 ![Marvel Quiz](docs/quiz_marvel.png)
 
-* The Marvel Quiz is a game is a simple straight forward quiz that suits everyone who'd like to test his/her marvel knowledge.
-* This is my Project Portfolio 3 submission for Code Institute's Diploma in Web Application Development course.It is basic command-line application based on the programing language Python.
+* The Marvel Quiz is a simple straight forward quiz game that suits everyone who'd like to test his/her marvel knowledge.
+* This is my Project Portfolio 3 submission for Code Institute's Diploma in Web Application Development course.It is a basic command-line application written with the programing language Python.
   - Live website [here](https://quiz-marvel.herokuapp.com/)
  ---
 
@@ -32,7 +32,7 @@
 ## Objectives
 
  - Simple and entertainng quiz game application.
- - Clear inforamation delivered to proceed throught the game.
+ - Clear information delivered to proceed through the game.
  - deliver a score at the end of the game.
 
 ## User stories
@@ -45,7 +45,7 @@
    - receive feedback when the name chosen isn't valid
    - receive an encouragement word to start the quiz when the name is valid
    - read clear questions with mutliple choice answer identified with the letter a, b and c
-   - enter his answer using a, b. or c
+   - enter his answer using a, b or c
    - recive a feedback when the answer is not valid
    - receive a feedback about the correctness of his/her answer
    - receive a score from 0 to 100 out of 100
@@ -53,6 +53,8 @@
    - quit the game 
 
 ## Technical Design
+
+The flowchart design describes the linear simple logic of the quiz. There's three crucial points: when certain input have to apply to certain code criteria in order to move forward. Otherwise input are always guided by different options.
    
   - <details><summary>Flowchart</summary><img src="docs/flowchart.jpg"></details>
 
@@ -150,15 +152,15 @@
 | :--- | :--- | :--- | :--- |
 | Welcome & Instructions screen| landing page shows a title and instructions | clicked live link | postive | 
 | Feedback about unsername| enter a name. Username valid: good luck message | taped an alphabetic username | positive |
-| Feedback about username | enter a name but not only with letter : username not valid. Another try | entered other keyboard but letter | positive |
+| Feedback about username | enter a name but not only with letter : username not valid. Another try | entered other keyboard other than a letter | positive |
 | Question with multiple choice option | read a question three choice ordered under a, b and c | entered a name before the first question or answering a previous question | positive |
-| Feedback when an answer not valid | when something else but a, b or c is typed as an answer. It is considered not valid | taped another letter but a, b or c | positive |
+| Feedback when an answer not valid | when something else other than a, b or c is typed as an answer. It is considered not valid | taped another letter other than a, b or c | positive |
 | Positive feedback when an answer correct | well done message when the right answer was typed | picked the right option btw a, b or c | positive |
 | Negative Feedback when an anser not correct | sorry message when the wrong answer was typed | picked the wrong option btw a, b or c | positive |
 | Score Display | when all questions are anwered appears the final score | answered all questions received a score out of  100 | positive |
 | Play again | Being asked to play again and tpye "y" to validate: reset game | taped "y" | positive |
 | Quit the quiz | Being asked to play again and tpye "n" to validate: Bye bye message | taped "n" | positive |
-| Feeback when other choice but "y" or "n" | Being asked to play again and tpye something except "y" or "n" : invalid answer message | taped another choice | positive |
+| Feeback when other choice other than "y" or "n" | Being asked to play again and tpye something except "y" or "n" : invalid answer message | taped input than "y" or "n" | positive |
 
 
 ---
@@ -192,11 +194,11 @@
 
 | Bug | Fixed |
 | :--- | :--- |
-| Validate_name function output  couldn’t prevent the exclusion of special symbol for username, due to parameter constant good_input not working to filter only letter (based on exhaustive alphabetic list) | Solution: switch for am elif witn parameter not name.isalpha  |
+| Validate_name function output  couldn’t prevent the exclusion of special symbol for username choice, due to parameter constant good_input not working to filter only letter (based on exhaustive alphabetic list) | Solution: switch for an elif with parameter "not name.isalpha"  |
 | None print output by the function start, due to the constant TITle and its value print function * ASCII | Solution: remove the print function |
-| play_again if statement logic: unbalanced syntax structure if with break, elif with return False : the else din't make sense and couldn't operate "invalid" message action   | Solution : replace the syntax with if with a break, if return False and if with paramater x != y and x != z |
-| sleep function worked fine but couldn't prevent input before the questions and choices appeared and giving ouput to quick | Solution: remove all sleep function associated to near input function |
-| if statement in a for loop could give a feedback once regarding an invalid choice answer but due to the input inside the if statement couldn't prevent to validate an invalid answer as a wrong answer | Solution: replace if statement by while to iterate the input and warining feedback until a, b or c is chosen |
+| play_again if statement logic: unbalanced syntax structure if with break, elif with return False: my else statement didn't make sense and couldn't operate "invalid" message action   | Solution : replace the syntax with if with a break, if return False and if with paramater such as "x != y and x != z" |
+| sleep function worked fine but couldn't prevent to tape input before the questions and choices appeared and giving ouput too quick | Solution: remove all sleep function associated near input method |
+| if statement in a for loop could give a feedback once regarding an invalid choice answer but due to the input inside the if statement couldn't prevent to validate an invalid answer as a wrong answer | Solution: replace if statement by while to iterate the input and warining feedback invalid answer until a, b or c is chosen |
 | PEP8 linter: diverse trailing whitespace issues on ASCII import, and too long line issues regarding the list quiz_questions  | Solution: Remove trailing whitespace, wrap the long line of code properly |
  
  ---
@@ -222,7 +224,7 @@
  - [Bro Code](https://github.com/beratzorlu/python-quiz/blob/main/README.md#libraries) - for understanding the logic of a quiz game:
    - [QUIZ GAME written in Python](https://www.youtube.com/watch?v=zehwgTB0vV8)
    - [Python quiz game](https://www.youtube.com/watch?v=yriw5Zh406s)
- - [Dev.to How to build a Quiz Game in Python](https://dev.to/mindninjax/how-to-build-a-quiz-game-in-python-10ik) - or understanding the logic of a quiz game.
+ - [Dev.to How to build a Quiz Game in Python](https://dev.to/mindninjax/how-to-build-a-quiz-game-in-python-10ik) - for understanding the logic of a quiz game.
  - [Python: Print ascii art](https://www.youtube.com/watch?v=arcFqEuV_XQ) - for understanding the use of ASCII.
  - [Geeks for Geeks](https://www.geeksforgeeks.org/print-colors-python-terminal/) - for understanding the use of colors in python.
  
@@ -241,6 +243,7 @@
  - [Gitpod Full Template](https://github.com/Code-Institute-Org/python-essentials-template) -  used as a template for the gitpod environment.
  - [Python if __name__ == __main__ Explained](https://www.freecodecamp.org/news/if-name-main-python-example/) - used to make sure the function start run as main programm.
  - [W3docs](https://www.w3docs.com/snippets/python/how-to-clear-the-interpreter-console.html) - used to clear the screen.
+ - [Educative.io](https://www.educative.io/answers/what-is-the-repr-method-in-python) - used and adapted for my class Question to make sure tha is printed as a string .
 
 
 
@@ -250,7 +253,7 @@
    - [Parade](https://parade.com/1192384/alexandra-hurtado/marvel-trivia-quiz/)
    - [QuizBreaker](https://www.quizbreaker.com/marvel-trivia#)
 
-- I wrote the multiple choice content.
+- I wrote the multiple choice answer content.
 
 
 ## Acknowledgments
