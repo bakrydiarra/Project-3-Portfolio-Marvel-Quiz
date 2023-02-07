@@ -23,13 +23,9 @@ def start():
     """
     print(TITLE)
     print("Welcome to the superheroes universe!\n")
-    sleep(1)
     print("Are you ready to test your knowledge?\n")
-    sleep(1)
     print("You have 10 multiple choice questions.\n")
-    sleep(1)
     print("Select your answer typing 'a', 'b' or 'c'.\n")
-    sleep(1)
     validate_name()
     run_quiz()
     play_again()
