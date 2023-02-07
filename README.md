@@ -11,7 +11,7 @@
 
 * The Marvel Quiz is a game is a simple straight forward quiz that suits everyone who'd like to test his/her marvel knowledge.
 * This is my Project Portfolio 3 submission for Code Institute's Diploma in Web Application Development course.It is basic command-line application based on the programing language Python.
-  - Live website [here]
+  - Live website [here](https://quiz-marvel.herokuapp.com/)
  ---
 
 # Index – Table of Contents
@@ -133,18 +133,18 @@
 
 ## Testing
 
-### Validator Testing
+### Validation Code
 
-  Code Institute's [Python Linter](https://pep8ci.herokuapp.com/) was used to check the correctness of the app's code.
+  Code Institute's [Python Linter](https://pep8ci.herokuapp.com/) was used to check the correctness of the app's code. No error to be found.
    - <details><summary>logo.py</summary><img src="docs/logo_py.png"></details>
    - <details><summary>quiz.py</summary><img src="docs/quiz_py.png"></details>
    - <details><summary>run.py</summary><img src="docs/run_py.png"></details>
      
 
----
+
  
 
- Testing the user experience
+ ## Testing the user experience
 
 | Feature | Expect | Action | Result |
 | :--- | :--- | :--- | :--- |
@@ -192,13 +192,13 @@
 
 | Bug | Fixed |
 | :--- | :--- |
-| validate_name if parameter : | X |
-| play_again if statement logic: | X |
-| sleep function : | X |
-| if statement in a for loop: | X |
-| Constant Title : | X |
+| Validate_name function output  couldn’t prevent the exclusion of special symbol for username, due to parameter constant good_input not working to filter only letter (based on exhaustive alphabetic list) | Solution: switch for am elif witn parameter not name.isalpha  |
+| None print output by the function start, due to the constant TITle and its value print function * ASCII | Solution: remove the print function |
+| play_again if statement logic: unbalanced syntax structure if with break, elif with return False : the else din't make sense and couldn't operate "invalid" message action   | Solution : replace the syntax with if with a break, if return False and if with paramater x != y and x != z |
+| sleep function worked fine but couldn't prevent input before the questions and choices appeared and giving ouput to quick | Solution: remove all sleep function associated to near input function |
+| if statement in a for loop could give a feedback once regarding an invalid choice answer but due to the input inside the if statement couldn't prevent to validate an invalid answer as a wrong answer | Solution: replace if statement by while to iterate the input and warining feedback until a, b or c is chosen |
+| PEP8 linter: diverse trailing whitespace issues on ASCII import, and too long line issues regarding the list quiz_questions  | Solution: Remove trailing whitespace, wrap the long line of code properly |
  
-
  ---
 
  
