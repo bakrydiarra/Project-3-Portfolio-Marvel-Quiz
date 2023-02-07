@@ -85,29 +85,41 @@
 
 ### Username Feedback
 
- - Receive feedback when the name chosen isn't valid
- - Receive an encouragement word to start the quiz when the name is valid
+ - Feedback when the name chosen isn't valid
+ - Encouragement word to start the quiz when the name is valid
  - <details><summary>Invalid Name</summary><img src="docs/invalid_name.png"></details>
  - <details><summary>Valid Name</summary><img src="docs/valid_name.png"></details>
 
 ### Questions & Choices
 
- - Read clear questions with mutliple choice answer identified with the letter a, b and c 
+ - Clear questions with mutliple choice answer identified with the letter a, b and c 
  - <details><summary>Question and Choices</summary><img src="docs/questions_and_choices.png"></details>
 
 ### Answer Feedback
 
- - Recive a feedback when the answer is not valid
- - Receive a feedback about the correctness of his/her answer
+ - Feedback when the answer is not valid
+ - Feedback about the correctness of his/her answer
  - <details><summary>Invalid Answer</summary><img src="docs/invalid_answer.png"></details>
- - <details><summary>Positive Answer Feedback</summary><img src="docs/answer_feedback_.png"></details>
+ - <details><summary>Positive Answer Feedback</summary><img src="docs/answer_feedback_positive.png"></details>
+ - <details><summary>Negative Answer Feedback</summary><img src="docs/answer_feedback_wrong.png"></details>
 
 ### Score & Play again choice
 
+ - Score from 0 to 100 out of 100
+ - <details><summary>Score</summary><img src="docs/score.png"></details>
+
 ### Reset Game
+
+ - Rest the game for another play
+ - <details><summary>Play Again</summary><img src="docs/play_again.png"></details>
+ - <details><summary>Rest</summary><img src="docs/reseting.png"></details>
+ - <details><summary>Welcome Screen</summary><img src="docs/welcome_instruction_screen.png"></details>
 
 ### Quit Game
 
+ - quit the game  processing
+ - <details><summary>Quit Game</summary><img src="docs/quit_game.png"></details>
+- <details><summary>Quit Game bis</summary><img src="docs/quit_game_bis.png"></details>
 
 
 
