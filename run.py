@@ -45,7 +45,7 @@ def validate_name():
         elif not name.isalpha():
             print(f"{Fore.RED}Please enter a name between 4 and 10 letters")
         else:
-            print(f"Godd luck, {name}!")
+            print(f"Good luck, {name}!")
             print("")
             sleep(1)
             break

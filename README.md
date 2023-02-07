@@ -7,6 +7,8 @@
 
 # Site Info
 
+![Marvel Quiz](docs/quiz_marvel.png)
+
 * The Marvel Quiz is a game is a simple straight forward quiz that suits everyone who'd like to test his/her marvel knowledge.
 * This is my Project Portfolio 3 submission for Code Institute's Diploma in Web Application Development course.It is basic command-line application based on the programing language Python.
   - Live website [here]
@@ -67,19 +69,38 @@
   
   ---
 
-
-   
+ 
 # Features
 
-### Existing Features
+
+## Existing Features
 
 ### Welcome & Instructions screen
 
+ - Title indicating the purpose of the app
+ - Short and concise instructions
+ - Input name
+ - <details><summary>Welcome Screen</summary><img src="docs/welcome_instruction_screen.png"></details>
+
+
 ### Username Feedback
+
+ - Receive feedback when the name chosen isn't valid
+ - Receive an encouragement word to start the quiz when the name is valid
+ - <details><summary>Invalid Name</summary><img src="docs/invalid_name.png"></details>
+ - <details><summary>Valid Name</summary><img src="docs/valid_name.png"></details>
 
 ### Questions & Choices
 
+ - Read clear questions with mutliple choice answer identified with the letter a, b and c 
+ - <details><summary>Question and Choices</summary><img src="docs/questions_and_choices.png"></details>
+
 ### Answer Feedback
+
+ - Recive a feedback when the answer is not valid
+ - Receive a feedback about the correctness of his/her answer
+ - <details><summary>Invalid Answer</summary><img src="docs/invalid_answer.png"></details>
+ - <details><summary>Positive Answer Feedback</summary><img src="docs/answer_feedback_.png"></details>
 
 ### Score & Play again choice
 
@@ -115,17 +136,17 @@
 
 | Feature | Expect | Action | Result |
 | :--- | :--- | :--- | :--- |
-| Welcome & Instructions screen| landing page shows a title and instructions | clicked live link | X | 
-| Feedback about unsername| enter a name. Username valid: good luck message | taped an alphabetic username | X |
-| Feedback about username | enter a name but not only with letter : username not valid. Another try | entered other keyboard but letter | X |
-| Question with multiple choice option | read a question three choice ordered under a, b and c | entered a name before the first question or answering a previous question | X |
-| Feedback when an answer not valid | when something else but a, b or c is typed as an answer. It is considered not valid | taped another letter but a, b or c | X |
-| Positive feedback when an answer correct | well done message when the right answer was typed | picked the right option btw a, b or c | X |
-| Negative Feedback when an anser not correct | sorry message when the wrong answer was typed | picked the wrong option btw a, b or c | X |
-| Score Display | when all questions are anwered appears the final score | answered all questions received a score out of  100 | X |
-| Play again | Being asked to play again and tpye "y" to validate: reset game | taped "y" | X |
-| Quit the quiz | Being asked to play again and tpye "n" to validate: Bye bye message | taped "n" | X |
-| Feeback when other choice but "y" or "n" | Being asked to play again and tpye something except "y" or "n" : invalid answer message | taped another choice | X |
+| Welcome & Instructions screen| landing page shows a title and instructions | clicked live link | postive | 
+| Feedback about unsername| enter a name. Username valid: good luck message | taped an alphabetic username | positive |
+| Feedback about username | enter a name but not only with letter : username not valid. Another try | entered other keyboard but letter | positive |
+| Question with multiple choice option | read a question three choice ordered under a, b and c | entered a name before the first question or answering a previous question | positive |
+| Feedback when an answer not valid | when something else but a, b or c is typed as an answer. It is considered not valid | taped another letter but a, b or c | positive |
+| Positive feedback when an answer correct | well done message when the right answer was typed | picked the right option btw a, b or c | positive |
+| Negative Feedback when an anser not correct | sorry message when the wrong answer was typed | picked the wrong option btw a, b or c | positive |
+| Score Display | when all questions are anwered appears the final score | answered all questions received a score out of  100 | positive |
+| Play again | Being asked to play again and tpye "y" to validate: reset game | taped "y" | positive |
+| Quit the quiz | Being asked to play again and tpye "n" to validate: Bye bye message | taped "n" | positive |
+| Feeback when other choice but "y" or "n" | Being asked to play again and tpye something except "y" or "n" : invalid answer message | taped another choice | positive |
 
 
 ---
