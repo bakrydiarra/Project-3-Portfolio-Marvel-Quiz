@@ -147,7 +147,7 @@
 9. Click on ‘Deploy’ tab.
 10. Select ‘GitHub' as deployment method.
 11. Search for my Github repository name and then click “connect”.
-12. Scroll down and click ‘Enable Automatic Deploys’. (Confirm the correct branch and choose either to automatically or manually deploy your app. In this case I clicked automatic deploy.).
+12. Scroll down and click ‘Enable Manual Deploy’.
 13. Once deployed, click ‘view’ to access deployed project.
 
 
@@ -159,7 +159,11 @@
 
 | Bug | Fixed |
 | :--- | :--- |
-| X | X |
+| validate_name if parameter : | X |
+| play_again if statement logic: | X |
+| sleep function : | X |
+| if statement in a for loop: | X |
+| Constant Title : | X |
  
 
  ---
