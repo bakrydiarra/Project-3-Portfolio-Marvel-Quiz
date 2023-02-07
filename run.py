@@ -68,7 +68,7 @@ def run_quiz():
         for option in question.choice:
             print(option)
         user_answer = input("Enter your answer: \n")
-        if user_answer.lower() not in ["a", "b", "c"]:
+        while user_answer.lower() not in ["a", "b", "c"]:
             print(f"{Fore.RED}{Style.BRIGHT}Invalid answer! Pick: a, b or c.")
             user_answer = input("Enter your answer: \n")
         if user_answer.lower() == question.answer.lower():

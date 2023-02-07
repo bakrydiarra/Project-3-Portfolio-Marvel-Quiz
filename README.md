@@ -138,7 +138,7 @@
 
 1. Sign in to Heroku.
 2. In Heroku account, go to Dashboard and click ‘Create New App’. Give the app a unique name and select region (Europe).
-3. Click ‘Create App’.
+3. Click "New" and then click ‘Create App’.
 4. Click on setting tab.
 5. Click Reveal Config Vars.
 6. Set the value of KEY to PORT, and the value to 8000.
